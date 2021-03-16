@@ -1,6 +1,7 @@
 {
-  "name": "react-hook-form",
+  "name": "@s97712/react-hook-form",
   "description": "Performant, flexible and extensible forms library for React Hooks",
+  "private": false,
   "version": "7.0.0-rc.4",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
