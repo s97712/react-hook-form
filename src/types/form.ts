@@ -18,6 +18,7 @@ import { RegisterOptions } from './validator';
 import { FieldArrayDefaultValues } from './fieldArray';
 import { SubjectType, Subscription } from '../utils/Subject';
 import { EventType } from './events';
+import { FormName } from '../formName';
 
 declare const $NestedValue: unique symbol;
 
@@ -279,6 +280,7 @@ export type WatchObserver<TFieldValues> = (
 ) => void;
 
 export type UseFormReturn<TFieldValues extends FieldValues = FieldValues> = {
+  name: FormName<TFieldValues>;
   watch: UseFormWatch<TFieldValues>;
   getValues: UseFormGetValues<TFieldValues>;
   setError: UseFormSetError<TFieldValues>;

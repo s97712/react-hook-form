@@ -74,6 +74,7 @@ import {
   Path,
   DeepPartial,
 } from './types';
+import { FormName, form_name } from './formName';
 
 const isWindowUndefined = typeof window === UNDEFINED;
 
@@ -1143,6 +1144,7 @@ export function useForm<
       formState,
       readFormStateRef,
     ),
+    name: form_name as FormName<TFieldValues>,
     trigger,
     register,
     handleSubmit,
